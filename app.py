@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import streamlit as st
 from resume_parser import extract_resume_text
 import joblib
@@ -19,7 +19,7 @@ if uploaded_file:
     features = vectorizer.transform([resume_text])
     prediction = model.predict(features)
     st.success(f"Predicted Category: **{prediction[0]}**")
-=======
+
 import streamlit as st
 from resume_parser import extract_resume_text
 import joblib
@@ -40,4 +40,4 @@ if uploaded_file:
     features = vectorizer.transform([resume_text])
     prediction = model.predict(features)
     st.success(f"Predicted Category: **{prediction[0]}**")
->>>>>>> 60ecbfca4309b98e63a9a1b728d9a661c747d7b4
+
