@@ -8,3 +8,4 @@ nltk
 docx2txt
 spacy
 spacy-lookups-data
+RUN python -m spacy download en_core_web_sm
