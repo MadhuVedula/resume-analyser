@@ -2,7 +2,15 @@ import spacy
 import re
 
 # Load spaCy English model (run: python -m spacy download en_core_web_sm)
-nlp = spacy.load("en_core_web_sm")
+import subprocess
+import sys
+
+# Ensure the model is downloaded at runtime
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm")
 
 PROGRAMMING_LANGUAGES = [
     "Python", "Java", "C++", "JavaScript", "TypeScript", "Ruby", "Go", "Rust",
