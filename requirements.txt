@@ -6,3 +6,4 @@ pandas
 numpy
 nltk
 docx2txt
+spacy
