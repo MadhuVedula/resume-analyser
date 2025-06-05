@@ -1,5 +1,7 @@
 streamlit
-scikit-learn
+PyPDF2
 joblib
+scikit-learn
 pandas
-language-tool-python
+numpy
+nltk
